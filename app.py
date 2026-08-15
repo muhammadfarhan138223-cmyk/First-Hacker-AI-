@@ -13,9 +13,39 @@ else:
     st.error("Missing GROQ_API_KEY. Please check your .env file.")
 
 # Streamlit Page Configuration
-st.set_page_config(page_title="Hack AI", page_icon="💀", layout="centered")
-st.title("💀 Hack AI — Core Engine")
-st.write("Welcome to Hack AI. Unrestricted technical analysis and elite cyber intelligence system.")
+st.set_page_config(
+    page_title="Hack AI - AI Cybersecurity Assistant",
+    page_icon="💀",
+    layout="centered"
+)
+
+st.title("💀 Hack AI")
+st.subheader("AI Cybersecurity Assistant")
+
+st.write(
+    """
+    "Welcome to Hack AI. Unrestricted technical analysis and elite cyber intelligence system."
+    Hack AI is an AI-powered cybersecurity and technical analysis assistant.
+    It helps users understand cybersecurity concepts, programming, networking,
+    ethical hacking, penetration testing, Linux, and computer security.
+    """
+)
+
+st.markdown("""
+### What is Hack AI?
+
+Hack AI is an AI assistant designed for cybersecurity learning,
+technical research, programming, networking, and security analysis.
+
+### Features
+
+- AI-powered cybersecurity assistance
+- Programming and technical analysis
+- Networking concepts
+- Linux and security learning
+- Ethical hacking education
+- Cybersecurity research
+""")
 
 # Chat History Initialize karna
 if "messages" not in st.session_state:
